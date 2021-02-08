@@ -1,0 +1,141 @@
+:root {
+  --primary: #575757;
+  --secondary: #7e7e7e;
+  --work-border: #ffd200;
+  --work-bg: #ffee9d;
+  --work-out-bg: #b4eeff;
+  --work-out-border: #1cb5e0;
+  --school-bg: #b4fad7;
+  --school-border: #159957;
+  --coding-bg: #ffe4d8;
+  --coding-border: #ff6825;
+  --other-bg: #ffd2f4;
+  --other-border: #ea37bc;
+}
+
+.todoCard-container {
+  max-width: 40%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #f3f3f3;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 14px;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-topCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.todo-bottomCard {
+  display: flex;
+  align-items: center;
+  margin-left: 37px;
+}
+
+.todo-dueDate {
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dueDate-icon {
+  color: var(--secondary);
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.todo-title {
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+.circle {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+.completed-icon {
+  color: var(--secondary);
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.circle-work {
+  border: 2px solid var(--work-border);
+  background-color: var(--work-bg);
+}
+.circle-work-out {
+  border: 2px solid var(--work-out-border);
+  background-color: var(--work-out-bg);
+}
+.circle-school {
+  border: 2px solid var(--school-border);
+  background-color: var(--school-bg);
+}
+.circle-coding {
+  border: 2px solid var(--coding-border);
+  background-color: var(--coding-bg);
+}
+.circle-other {
+  border: 2px solid var(--other-border);
+  background-color: var(--other-bg);
+}
+
+@media screen and (max-width: 600px) {
+  .todoCard-container {
+    max-width: 90%;
+    height: 91px;
+  }
+
+  .todo-dueDate {
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dueDate-icon {
+    color: var(--secondary);
+    font-size: 15px;
+    margin-right: 5px;
+  }
+
+  .todo-title {
+    text-align: center;
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 12px;
+  }
+
+  .circle {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+  }
+  .completed-icon {
+    color: var(--secondary);
+    font-size: 30px;
+    cursor: pointer;
+  }
+}

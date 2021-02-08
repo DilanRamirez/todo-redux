@@ -1,0 +1,42 @@
+.navBar {
+  background: #ff416c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff416c,
+    #ff4b2b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff416c,
+    #ff4b2b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav li {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-title {
+  font-size: 48px;
+}
+.nav-opts {
+  font-size: 26px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-title {
+    font-size: 38px;
+  }
+  .nav-opts {
+    font-size: 16px;
+  }
+}
